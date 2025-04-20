@@ -1,12 +1,14 @@
 # Java Interners
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Simple java interners library<br>
 Allows to add `intern()` method (similarly to `String.intern()`) to your immutable classes with customizable interners<br>
-#### There is some standart interner implementations:<br>
+#### There is some standard interner implementations:<br>
 `MapInterner` - interner based on java.util.Map (java.util.HashMap in particular)<br>
 `ConcurrentMapInterner` - same as MapInterner but based on ConcurrentMap<br>
 `ProbInterner` - interner that accepts chance to deduplicate value and parent interner<br>
 ***
-Usage:<br>
+## Usage
 ```java
 
 import com.ydo4ki.interners.ConcurrentMapInterner;
@@ -40,3 +42,23 @@ class MyImmutableClass implements Internable<MyImmutableClass> {
 	}
 }
 ```
+
+
+## Installation
+
+### Maven
+
+```xml
+<dependency>
+    <groupId>com.ydo4ki</groupId>
+    <artifactId>Interners</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
+### Gradle
+
+```groovy
+implementation 'com.ydo4ki:Interners:1.0.0'
+```
+
