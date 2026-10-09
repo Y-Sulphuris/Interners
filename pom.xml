@@ -6,7 +6,7 @@
 
     <groupId>com.ydo4ki</groupId>
     <artifactId>Interners</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>Interners</name>
     <description>Common interner/deduplicator classes</description>
@@ -35,13 +35,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-
     <build>
         <plugins>
             <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
-                <version>0.7.0</version>
+                <version>0.11.0</version>
                 <extensions>true</extensions>
                 <configuration>
                     <publishingServerId>central</publishingServerId>
